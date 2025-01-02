@@ -27,10 +27,10 @@ const calc = {
 
 let input = calc.add(7+9); // 16
 
-input = calc.subtr(input-=3); // 13
+calc.subtr(input - 3); // 13
 
-input = calc.multi(input *= 5); // 65
+calc.multi(input * 5); // 65
 
-input = calc.divi(input /=5); // 13
+calc.divi(input / 5); // 13
 
 console.log(input); // should print 13
