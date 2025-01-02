@@ -12,9 +12,25 @@ const calc = {
         return x + y;
     },
 
-    subject(x, y) {
+    subtr(x, y) {
         return x - y;
-    }
+    },
+
+    multi(x,y) {
+        return x * y;
+    },
+
+    divi(x,y) {
+        return x / y;
+    },
 }
 
-console.log(calc.add(2, 5));
+let input = calc.add(7+9); // 16
+
+input = calc.subtr(input-=3); // 13
+
+input = calc.multi(input *= 5); // 65
+
+input = calc.divi(input /=5); // 13
+
+console.log(input); // should print 13
